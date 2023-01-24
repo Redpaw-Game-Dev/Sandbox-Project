@@ -33,6 +33,22 @@ MonoBehaviour:
     m_Address: Assets/Content/Scenes/Visual Scene.unity
     m_ReadOnly: 0
     m_SerializedLabels: []
+  - m_GUID: 4d61f736526adc64fa92ebd9ba7768bd
+    m_Address: Assets/Content/Scenes/Base Scene.unity
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 5b92474ea36cf134d80ad91decbc25ba
+    m_Address: Assets/Content/Scenes/UI Scene.unity
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 0564335480ffada438c4e39046488693
+    m_Address: Assets/Content/Scenes/Implementation Scene.unity
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 5811d15fe1c599e40bf15343ab0e388e
+    m_Address: Assets/Content/Scenes/Visual Scene.unity
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 6f51e5791b04fc6469b2e0090ab169a7, type: 2}
   m_SchemaSet:
