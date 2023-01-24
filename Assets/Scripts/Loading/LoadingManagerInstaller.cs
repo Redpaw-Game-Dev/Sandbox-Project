@@ -9,7 +9,7 @@ namespace Scripts.Loading
         
         public override void InstallBindings()
         {
-            Container.BindInterfacesAndSelfTo<LoadingManager>().FromNew().AsSingle().WithArguments(_baseScenesConfig);
+            Container.BindInterfacesAndSelfTo<LoadingManager>().AsSingle().WithArguments(_baseScenesConfig);
         }
     }
 }

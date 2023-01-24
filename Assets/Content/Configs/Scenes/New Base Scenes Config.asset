@@ -13,19 +13,19 @@ MonoBehaviour:
   m_Name: New Base Scenes Config
   m_EditorClassIdentifier: 
   _baseScenes:
-  - m_AssetGUID: 242382b07e198b449a76ecbc8a836f82
+  - m_AssetGUID: 4d61f736526adc64fa92ebd9ba7768bd
     m_SubObjectName: 
     m_SubObjectType: 
     m_EditorAssetChanged: 0
-  - m_AssetGUID: c9e1f2b382363bf42ae0d69841813fc0
+  - m_AssetGUID: 5b92474ea36cf134d80ad91decbc25ba
     m_SubObjectName: 
     m_SubObjectType: 
     m_EditorAssetChanged: 0
-  - m_AssetGUID: 73866a20176285b4dbf519a9ee90f710
+  - m_AssetGUID: 0564335480ffada438c4e39046488693
     m_SubObjectName: 
     m_SubObjectType: 
     m_EditorAssetChanged: 0
-  - m_AssetGUID: e9c98ddd6d2ff934a804d5641eb6cdfe
+  - m_AssetGUID: 5811d15fe1c599e40bf15343ab0e388e
     m_SubObjectName: 
     m_SubObjectType: 
     m_EditorAssetChanged: 0

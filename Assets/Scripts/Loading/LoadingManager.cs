@@ -9,12 +9,7 @@ namespace Scripts.Loading
     {
         private bool _isBaseScenesLoading;
         private bool _isBaseScenesLoaded;
-        private BaseScenesConfig _baseScenesConfig;
-        
-        private LoadingManager(BaseScenesConfig baseScenesConfig)
-        {
-            _baseScenesConfig = baseScenesConfig;
-        }
+        [Inject] private BaseScenesConfig _baseScenesConfig;
         
         public void Initialize()
         {
