@@ -7,19 +7,19 @@ namespace Scripts.Abstraction
     {
         [Inject] private InputManager _inputManager;
         
-        private void HandleMove(Vector2Info info)
+        private void HandleMoveTick(Vector2Info info)
         {
             Process(info);
         }
 
         private void OnEnable()
         {
-            _inputManager.OnMove += HandleMove;
+            _inputManager.OnMoveTick += HandleMoveTick;
         }
 
         private void OnDisable()
         {
-            _inputManager.OnMove -= HandleMove;
+            _inputManager.OnMoveTick -= HandleMoveTick;
         }
     }
 }
