@@ -55,7 +55,6 @@ namespace Scripts.StateMachineSystem
                 _currentState?.Exit();
                 _currentState = state;
                 _currentState?.Enter();
-                Debug.Log(_currentState.GetType().Name);
             }
         }
 
