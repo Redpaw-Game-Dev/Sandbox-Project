@@ -24,9 +24,11 @@ namespace Scripts.Input
         private bool _isMoving;
         private bool _isUpdating;
         private Camera _mainCamera;
+        private Vector2 _moveAxis;
 
         public InputActionsConfig InputActionsConfig => _inputActionsConfig;
-        
+        public Vector2 MoveAxis => _moveAxis;
+
         public event Action<PointerInfo, IInteractive> OnPointerDown;
         public event Action<PointerInfo, IInteractive> OnPointerUp;
         public event Action<PointerInfo, IInteractive> OnPointerMove;
@@ -34,7 +36,8 @@ namespace Scripts.Input
         public event Action<PointerInfo, IInteractive> OnPointerExit;
         public event Action<PointerInfo, IInteractive> OnPointerDrag;
         public event Action<PointerInfo, IInteractive> OnPointerHold;
-        public event Action<Vector2Info> OnMove;
+        public event Action<Vector2Info> OnMoveTick;
+        public event Action<Vector2> OnMoveAxisChanged;
 
         [Inject]
         private void Construct(ObjectsManager objectsManager)
@@ -58,6 +61,7 @@ namespace Scripts.Input
             _inputActionsConfig.Base.PointerClick.started += HandlePointerDownAction;
             _inputActionsConfig.Base.PointerClick.canceled += HandlePointerUpAction;
             _inputActionsConfig.Base.Move.started += HandleMoveStarted;
+            _inputActionsConfig.Base.Move.performed += HandleMovePerformed;
             _inputActionsConfig.Base.Move.canceled += HandleMoveCanceled;
             _inputActionsConfig.Base.Enable();
             EnhancedTouch.EnhancedTouchSupport.Enable();
@@ -86,7 +90,7 @@ namespace Scripts.Input
                 var moveInput = _inputActionsConfig.Base.Move.ReadValue<Vector2>();
                 if (moveInput != Vector2.zero)
                 { 
-                    OnMove?.Invoke(new Vector2Info(moveInput));
+                    OnMoveTick?.Invoke(new Vector2Info(moveInput));
                 }
                
             }
@@ -155,9 +159,18 @@ namespace Scripts.Input
             _isMoving = true;
         }
         
+        private void HandleMovePerformed(InputAction.CallbackContext context)
+        {
+            _moveAxis = context.ReadValue<Vector2>();
+            OnMoveAxisChanged?.Invoke(_moveAxis);
+        }
+        
         private void HandleMoveCanceled(InputAction.CallbackContext context)
         {
             _isMoving = false;
+            _moveAxis = Vector2.zero;
+            OnMoveAxisChanged?.Invoke(_moveAxis);
+            
         }
         
         private void UpdateActiveInteractive(int index)

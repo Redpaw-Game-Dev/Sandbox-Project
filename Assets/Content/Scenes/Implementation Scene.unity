@@ -552,11 +552,6 @@ MonoBehaviour:
     - Name: _interactive
       Entry: 10
       Data: 0
-  _rayLength: 100
-  _rayMask:
-    serializedVersion: 2
-    m_Bits: 128
-  _speed: 50
 --- !u!1 &882347806
 GameObject:
   m_ObjectHideFlags: 0
@@ -749,8 +744,8 @@ GameObject:
   - component: {fileID: 1756377166}
   - component: {fileID: 1756377167}
   - component: {fileID: 1756377169}
-  - component: {fileID: 1756377168}
   - component: {fileID: 1756377170}
+  - component: {fileID: 1756377171}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -870,38 +865,6 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
---- !u!114 &1756377168
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1756377164}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8eecac83e2394cef8adfbf3ab6a5560b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
-    ReferencedUnityObjects:
-    - {fileID: 1756377167}
-    SerializedBytesString: 
-    Prefab: {fileID: 0}
-    PrefabModificationsReferencedUnityObjects: []
-    PrefabModifications: []
-    SerializationNodes:
-    - Name: _entity
-      Entry: 10
-      Data: 0
-    - Name: _statsLabel
-      Entry: 7
-      Data: 0|Scripts.Abstraction.StatsLabel, Assembly-CSharp
-    - Name: 
-      Entry: 8
-      Data: 
-  _entityTransform: {fileID: 1756377165}
 --- !u!114 &1756377169
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -917,8 +880,7 @@ MonoBehaviour:
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
-    ReferencedUnityObjects:
-    - {fileID: 1756377168}
+    ReferencedUnityObjects: []
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -937,28 +899,7 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 7
-      Data: 2|Scripts.Abstraction.Vector2Info, Assembly-CSharp
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: $v
-      Entry: 7
-      Data: 3|Scripts.Abstraction.ProcessMovementBehaviourTask, Assembly-CSharp
-    - Name: _movementBehaviour
-      Entry: 10
       Data: 0
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
     - Name: 
       Entry: 13
       Data: 
@@ -979,6 +920,212 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _id: PlayerTransform
   _object: {fileID: 1756377165}
+--- !u!114 &1756377171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1756377164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41ac7b800f084ba6a7916890586df66c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 1756377167}
+    - {fileID: 1756377165}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: _states
+      Entry: 7
+      Data: 0|Scripts.StateMachineSystem.IState[], Assembly-CSharp
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 1|Scripts.StateMachineSystem.IdleState, Assembly-CSharp
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 2|Scripts.StateMachineSystem.EntityTransformMoveState, Assembly-CSharp
+    - Name: _entity
+      Entry: 10
+      Data: 0
+    - Name: _entityTransform
+      Entry: 10
+      Data: 1
+    - Name: _statsLabel
+      Entry: 7
+      Data: 3|Scripts.Abstraction.StatsLabel, Assembly-CSharp
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: _initialState
+      Entry: 7
+      Data: 4|System.RuntimeType, mscorlib
+    - Name: 
+      Entry: 1
+      Data: Scripts.StateMachineSystem.IdleState, Assembly-CSharp
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: _transitions
+      Entry: 7
+      Data: 5|System.Collections.Generic.Dictionary`2[[System.Type, mscorlib],[Scripts.StateMachineSystem.Transition[],
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 7
+      Data: 6|System.Collections.Generic.ObjectEqualityComparer`1[[System.Type, mscorlib]],
+        mscorlib
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 9
+      Data: 4
+    - Name: $v
+      Entry: 7
+      Data: 7|Scripts.StateMachineSystem.Transition[], Assembly-CSharp
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 8|Scripts.StateMachineSystem.Transition, Assembly-CSharp
+    - Name: _toState
+      Entry: 7
+      Data: 9|System.RuntimeType, mscorlib
+    - Name: 
+      Entry: 1
+      Data: Scripts.StateMachineSystem.EntityTransformMoveState, Assembly-CSharp
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: _conditions
+      Entry: 7
+      Data: 10|Scripts.StateMachineSystem.Condition[], Assembly-CSharp
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 11|Scripts.StateMachineSystem.InputAxisZeroCondition, Assembly-CSharp
+    - Name: _isNecessary
+      Entry: 5
+      Data: true
+    - Name: _logicalNot
+      Entry: 5
+      Data: true
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 9
+      Data: 9
+    - Name: $v
+      Entry: 7
+      Data: 12|Scripts.StateMachineSystem.Transition[], Assembly-CSharp
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 13|Scripts.StateMachineSystem.Transition, Assembly-CSharp
+    - Name: _toState
+      Entry: 9
+      Data: 4
+    - Name: _conditions
+      Entry: 7
+      Data: 14|Scripts.StateMachineSystem.Condition[], Assembly-CSharp
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 15|Scripts.StateMachineSystem.InputAxisZeroCondition, Assembly-CSharp
+    - Name: _isNecessary
+      Entry: 5
+      Data: true
+    - Name: _logicalNot
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: _editorState
+      Entry: 9
+      Data: 9
+  _anyTransitions: []
 --- !u!1 &1804351671
 GameObject:
   m_ObjectHideFlags: 0
