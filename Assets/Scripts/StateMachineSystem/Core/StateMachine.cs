@@ -40,17 +40,12 @@ namespace Scripts.StateMachineSystem
 
         private void Update()
         {
-            var transition = TryGetTransition();
-            if (transition != null)
-            {
-                SetState(GetStateByType(transition.ToState));
-            }
             _currentState?.Tick();
         }
 
         private void SetState(IState state)
         {
-            if (state != null && _states.Contains(state))
+            if (state != null && !ReferenceEquals(_currentState, state) && _states.Contains(state))
             {
                 _currentState?.Exit();
                 _currentState = state;
@@ -68,6 +63,15 @@ namespace Scripts.StateMachineSystem
                 result = _transitions[_currentState.GetType()].FirstOrDefault(transition => transition.IsPossible());
             }
             return result;
+        }
+
+        public void TryChangeState()
+        {
+            var transition = TryGetTransition();
+            if (transition != null)
+            {
+                SetState(GetStateByType(transition.ToState));
+            }
         }
         
 #if UNITY_EDITOR

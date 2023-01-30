@@ -834,13 +834,22 @@ MonoBehaviour:
         mscorlib
     - Name: 
       Entry: 12
-      Data: 1
+      Data: 2
     - Name: 
       Entry: 7
       Data: 4|Scripts.Abstraction.SpeedFeature, Assembly-CSharp
     - Name: _value
       Entry: 4
       Data: 10
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 5|Scripts.Abstraction.RotationSpeedFeature, Assembly-CSharp
+    - Name: _value
+      Entry: 4
+      Data: 1000
     - Name: 
       Entry: 8
       Data: 
@@ -861,7 +870,7 @@ MonoBehaviour:
       Data: 
     - Name: _editorLabel
       Entry: 7
-      Data: 5|Scripts.Abstraction.StatsLabel, Assembly-CSharp
+      Data: 6|Scripts.Abstraction.StatsLabel, Assembly-CSharp
     - Name: 
       Entry: 8
       Data: 
@@ -880,7 +889,8 @@ MonoBehaviour:
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
-    ReferencedUnityObjects: []
+    ReferencedUnityObjects:
+    - {fileID: 1756377171}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -899,7 +909,28 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 7
+      Data: 2|Scripts.Abstraction.InputAxisInfo, Assembly-CSharp
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: $v
+      Entry: 7
+      Data: 3|Scripts.Abstraction.TryChangeStateTask, Assembly-CSharp
+    - Name: _stateMachine
+      Entry: 10
       Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: 
       Entry: 13
       Data: 

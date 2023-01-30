@@ -36,8 +36,8 @@ namespace Scripts.Input
         public event Action<PointerInfo, IInteractive> OnPointerExit;
         public event Action<PointerInfo, IInteractive> OnPointerDrag;
         public event Action<PointerInfo, IInteractive> OnPointerHold;
-        public event Action<Vector2Info> OnMoveTick;
-        public event Action<Vector2> OnMoveAxisChanged;
+        public event Action<InputAxisInfo> OnMoveTick;
+        public event Action<InputAxisInfo> OnMoveAxisChanged;
 
         [Inject]
         private void Construct(ObjectsManager objectsManager)
@@ -90,7 +90,7 @@ namespace Scripts.Input
                 var moveInput = _inputActionsConfig.Base.Move.ReadValue<Vector2>();
                 if (moveInput != Vector2.zero)
                 { 
-                    OnMoveTick?.Invoke(new Vector2Info(moveInput));
+                    OnMoveTick?.Invoke(new InputAxisInfo(moveInput));
                 }
                
             }
@@ -162,14 +162,14 @@ namespace Scripts.Input
         private void HandleMovePerformed(InputAction.CallbackContext context)
         {
             _moveAxis = context.ReadValue<Vector2>();
-            OnMoveAxisChanged?.Invoke(_moveAxis);
+            OnMoveAxisChanged?.Invoke(new InputAxisInfo(_moveAxis));
         }
         
         private void HandleMoveCanceled(InputAction.CallbackContext context)
         {
             _isMoving = false;
             _moveAxis = Vector2.zero;
-            OnMoveAxisChanged?.Invoke(_moveAxis);
+            OnMoveAxisChanged?.Invoke(new InputAxisInfo(_moveAxis));
             
         }
         
