@@ -19,6 +19,7 @@ namespace Scripts.StateMachineSystem
         
         [Inject(Id = "Main Camera")] private Camera _camera;
         private SpeedFeature _speed;
+        private RotationSpeedFeature _rotationSpeed;
         private InputManager _inputManager;
         private Vector3 _moveDirection;
         private Vector2 _inputMoveAxis; 
@@ -35,6 +36,7 @@ namespace Scripts.StateMachineSystem
         public void Enter()
         {
             _speed ??= _entity.GetFeature<SpeedFeature>(_statsLabel) as SpeedFeature;
+            _rotationSpeed ??= _entity.GetFeature<RotationSpeedFeature>(_statsLabel) as RotationSpeedFeature;
             _inputManager.OnMoveAxisChanged += HandleMoveAxisChanged;
             OnEntered?.Invoke();
         }
@@ -45,7 +47,8 @@ namespace Scripts.StateMachineSystem
             _entityTransform.position = Vector3.MoveTowards(_entityTransform.position,
                 _entityTransform.position + _moveDirection * (_speed.Value * _inputMoveAxis.magnitude),
                 _speed.Value * _inputMoveAxis.magnitude * Time.deltaTime);
-            _entityTransform.rotation = Quaternion.LookRotation(_moveDirection);
+            _entityTransform.rotation = Quaternion.RotateTowards(_entityTransform.rotation,
+                Quaternion.LookRotation(_moveDirection), _rotationSpeed.Value * Time.deltaTime);
         }
 
         public void Exit()
@@ -54,9 +57,9 @@ namespace Scripts.StateMachineSystem
             OnExited?.Invoke();
         }
         
-        private void HandleMoveAxisChanged(Vector2 vector2)
+        private void HandleMoveAxisChanged(InputAxisInfo inputAxisInfo)
         { 
-            _inputMoveAxis = vector2;
+            _inputMoveAxis = inputAxisInfo.Axis;
         }
         
         private void UpdateMoveDirection()

@@ -1,4 +1,5 @@
 ﻿using Scripts.Input;
+using UnityEngine;
 using Zenject;
 
 namespace Scripts.Abstraction
@@ -7,19 +8,19 @@ namespace Scripts.Abstraction
     {
         [Inject] private InputManager _inputManager;
         
-        private void HandleMoveTick(Vector2Info info)
+        private void HandleMoveTick(InputAxisInfo inputAxis)
         {
-            Process(info);
+            Process(inputAxis);
         }
 
         private void OnEnable()
         {
-            _inputManager.OnMoveTick += HandleMoveTick;
+            _inputManager.OnMoveAxisChanged += HandleMoveTick;
         }
 
         private void OnDisable()
         {
-            _inputManager.OnMoveTick -= HandleMoveTick;
+            _inputManager.OnMoveAxisChanged -= HandleMoveTick;
         }
     }
 }

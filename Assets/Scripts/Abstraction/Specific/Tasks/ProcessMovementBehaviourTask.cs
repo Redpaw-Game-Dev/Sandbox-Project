@@ -11,9 +11,9 @@ namespace Scripts.Abstraction
         
         public override void Do(IInfo info = null)
         {
-            if (info is Vector2Info vector2Info)
+            if (info is InputAxisInfo vector2Info)
             {
-                Vector2 inputDirection = vector2Info.Vector;
+                Vector2 inputDirection = vector2Info.Axis;
                 Vector3 worldSpaceDirection = new Vector3(inputDirection.x, 0f, inputDirection.y);
                 Vector3 cameraForward = _camera.transform.forward;
                 Vector3 faceDirection = new Vector3(cameraForward.x, 0, cameraForward.z);
