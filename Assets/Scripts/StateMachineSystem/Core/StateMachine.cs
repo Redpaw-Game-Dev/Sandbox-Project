@@ -43,6 +43,16 @@ namespace Scripts.StateMachineSystem
             _currentState?.Tick();
         }
 
+        private void FixedUpdate()
+        {
+            _currentState.FixedTick();
+        }
+
+        private void LateUpdate()
+        {
+            _currentState.LateTick();
+        }
+
         private void SetState(IState state)
         {
             if (state != null && !ReferenceEquals(_currentState, state) && _states.Contains(state))

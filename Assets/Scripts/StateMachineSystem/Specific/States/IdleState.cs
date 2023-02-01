@@ -1,27 +1,20 @@
-﻿using System;
-
-namespace Scripts.StateMachineSystem
+﻿namespace Scripts.StateMachineSystem
 {
-    public class IdleState : IState
+    public class IdleState : State
     {
-        public event Action OnEntered;
-        public event Action OnExited;
 
-        public void Enter()
-        {
-            OnEntered?.Invoke();;
-        }
+        protected override void Initialize() { }
 
-        public void Tick()
-        {
-            
-        }
+        protected override void EnterActions() { }
 
-        public void Exit()
-        {
-            OnExited?.Invoke();
-        }
-        
+        protected override void TickActions() { }
+
+        protected override void FixedTickActions() { }
+
+        protected override void LateTickActions() { }
+
+        protected override void ExitActions() { }
+
         public override bool Equals(object obj)
         {
             return obj is IdleState;

@@ -85,7 +85,7 @@ namespace Scripts.Input
                     ""id"": ""1a94fd3f-0164-4ff8-aa01-a358340ab82f"",
                     ""path"": ""<Gamepad>/leftStick"",
                     ""interactions"": """",
-                    ""processors"": ""StickDeadzone"",
+                    ""processors"": ""StickDeadzone(min=0.085)"",
                     ""groups"": ""Gamepad;Touchscreen"",
                     ""action"": ""Move"",
                     ""isComposite"": false,
