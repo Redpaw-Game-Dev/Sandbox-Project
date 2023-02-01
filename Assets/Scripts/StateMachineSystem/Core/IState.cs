@@ -10,6 +10,8 @@ namespace Scripts.StateMachineSystem
         
         public void Enter();
         public void Tick();
+        public void FixedTick();
+        public void LateTick();
         public void Exit();
     }
 }

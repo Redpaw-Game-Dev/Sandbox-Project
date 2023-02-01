@@ -8,10 +8,10 @@ namespace Scripts.StateMachineSystem
     {
         public static IEnumerable<Type> GetStateTypes()
         {
-            var type = typeof(IState);
+            var stateBaseType = typeof(IState);
             return AppDomain.CurrentDomain.GetAssemblies()
-                .SelectMany(s => s.GetTypes())
-                .Where(p => type.IsAssignableFrom(p) && type != p);
+                .SelectMany(assembly => assembly.GetTypes())
+                .Where(type => stateBaseType.IsAssignableFrom(type) && !type.IsAbstract && !type.IsInterface);
         }
     }
 }
