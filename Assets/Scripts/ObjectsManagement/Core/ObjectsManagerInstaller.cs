@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using Zenject;
 
-namespace Scripts.ObjectsManagement
+namespace Sandbox.ObjectsManagement
 {
     public class ObjectsManagerInstaller : MonoInstaller
     {

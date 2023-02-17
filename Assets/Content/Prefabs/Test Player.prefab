@@ -4283,12 +4283,12 @@ MonoBehaviour:
     SerializationNodes:
     - Name: _labeledFeatures
       Entry: 7
-      Data: 0|System.Collections.Generic.Dictionary`2[[Scripts.Abstraction.ILabel,
-        Assembly-CSharp],[System.Collections.Generic.List`1[[Scripts.Abstraction.IFeature,
+      Data: 0|System.Collections.Generic.Dictionary`2[[Sandbox.Abstraction.ILabel,
+        Assembly-CSharp],[System.Collections.Generic.List`1[[Sandbox.Abstraction.IFeature,
         Assembly-CSharp]], mscorlib]], mscorlib
     - Name: comparer
       Entry: 7
-      Data: 1|System.Collections.Generic.ObjectEqualityComparer`1[[Scripts.Abstraction.ILabel,
+      Data: 1|System.Collections.Generic.ObjectEqualityComparer`1[[Sandbox.Abstraction.ILabel,
         Assembly-CSharp]], mscorlib
     - Name: 
       Entry: 8
@@ -4301,23 +4301,32 @@ MonoBehaviour:
       Data: 
     - Name: $k
       Entry: 7
-      Data: 2|Scripts.Abstraction.StatsLabel, Assembly-CSharp
+      Data: 2|Sandbox.Abstraction.StatsLabel, Assembly-CSharp
     - Name: 
       Entry: 8
       Data: 
     - Name: $v
       Entry: 7
-      Data: 3|System.Collections.Generic.List`1[[Scripts.Abstraction.IFeature, Assembly-CSharp]],
+      Data: 3|System.Collections.Generic.List`1[[Sandbox.Abstraction.IFeature, Assembly-CSharp]],
         mscorlib
     - Name: 
       Entry: 12
-      Data: 1
+      Data: 2
     - Name: 
       Entry: 7
-      Data: 4|Scripts.Abstraction.SpeedFeature, Assembly-CSharp
+      Data: 4|Sandbox.Abstraction.SpeedFeature, Assembly-CSharp
     - Name: _value
       Entry: 4
       Data: 8
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 5|Sandbox.Abstraction.RotationSpeedFeature, Assembly-CSharp
+    - Name: _value
+      Entry: 4
+      Data: 100
     - Name: 
       Entry: 8
       Data: 
@@ -4338,7 +4347,7 @@ MonoBehaviour:
       Data: 
     - Name: _editorLabel
       Entry: 7
-      Data: 5|Scripts.Abstraction.StatsLabel, Assembly-CSharp
+      Data: 6|Sandbox.Abstraction.StatsLabel, Assembly-CSharp
     - Name: 
       Entry: 8
       Data: 
@@ -4366,11 +4375,11 @@ MonoBehaviour:
     SerializationNodes:
     - Name: _infoTasks
       Entry: 7
-      Data: 0|System.Collections.Generic.Dictionary`2[[Scripts.Abstraction.IInfo,
-        Assembly-CSharp],[Scripts.Abstraction.Task, Assembly-CSharp]], mscorlib
+      Data: 0|System.Collections.Generic.Dictionary`2[[Sandbox.Abstraction.IInfo,
+        Assembly-CSharp],[Sandbox.Abstraction.Task, Assembly-CSharp]], mscorlib
     - Name: comparer
       Entry: 7
-      Data: 1|System.Collections.Generic.ObjectEqualityComparer`1[[Scripts.Abstraction.IInfo,
+      Data: 1|System.Collections.Generic.ObjectEqualityComparer`1[[Sandbox.Abstraction.IInfo,
         Assembly-CSharp]], mscorlib
     - Name: 
       Entry: 8
@@ -4383,13 +4392,13 @@ MonoBehaviour:
       Data: 
     - Name: $k
       Entry: 7
-      Data: 2|Scripts.Abstraction.InputAxisInfo, Assembly-CSharp
+      Data: 2|Sandbox.Abstraction.InputAxisInfo, Assembly-CSharp
     - Name: 
       Entry: 8
       Data: 
     - Name: $v
       Entry: 7
-      Data: 3|Scripts.Abstraction.TryChangeStateTask, Assembly-CSharp
+      Data: 3|Sandbox.Abstraction.TryChangeStateTask, Assembly-CSharp
     - Name: _stateMachine
       Entry: 10
       Data: 0
@@ -4431,19 +4440,19 @@ MonoBehaviour:
     SerializationNodes:
     - Name: _states
       Entry: 7
-      Data: 0|Scripts.StateMachineSystem.IState[], Assembly-CSharp
+      Data: 0|Sandbox.StateMachineSystem.IState[], Assembly-CSharp
     - Name: 
       Entry: 12
       Data: 2
     - Name: 
       Entry: 7
-      Data: 1|Scripts.StateMachineSystem.IdleState, Assembly-CSharp
+      Data: 1|Sandbox.StateMachineSystem.IdleState, Assembly-CSharp
     - Name: 
       Entry: 8
       Data: 
     - Name: 
       Entry: 7
-      Data: 2|Scripts.StateMachineSystem.InputEntityMoveState, Assembly-CSharp
+      Data: 2|Sandbox.StateMachineSystem.InputEntityMoveState, Assembly-CSharp
     - Name: _entity
       Entry: 10
       Data: 0
@@ -4455,7 +4464,7 @@ MonoBehaviour:
       Data: 2
     - Name: _statsLabel
       Entry: 7
-      Data: 3|Scripts.Abstraction.StatsLabel, Assembly-CSharp
+      Data: 3|Sandbox.Abstraction.StatsLabel, Assembly-CSharp
     - Name: 
       Entry: 8
       Data: 
@@ -4473,13 +4482,13 @@ MonoBehaviour:
       Data: 4|System.RuntimeType, mscorlib
     - Name: 
       Entry: 1
-      Data: Scripts.StateMachineSystem.IdleState, Assembly-CSharp
+      Data: Sandbox.StateMachineSystem.IdleState, Assembly-CSharp
     - Name: 
       Entry: 8
       Data: 
     - Name: _transitions
       Entry: 7
-      Data: 5|System.Collections.Generic.Dictionary`2[[System.Type, mscorlib],[Scripts.StateMachineSystem.Transition[],
+      Data: 5|System.Collections.Generic.Dictionary`2[[System.Type, mscorlib],[Sandbox.StateMachineSystem.Transition[],
         Assembly-CSharp]], mscorlib
     - Name: comparer
       Entry: 7
@@ -4499,31 +4508,31 @@ MonoBehaviour:
       Data: 4
     - Name: $v
       Entry: 7
-      Data: 7|Scripts.StateMachineSystem.Transition[], Assembly-CSharp
+      Data: 7|Sandbox.StateMachineSystem.Transition[], Assembly-CSharp
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 8|Scripts.StateMachineSystem.Transition, Assembly-CSharp
+      Data: 8|Sandbox.StateMachineSystem.Transition, Assembly-CSharp
     - Name: _toState
       Entry: 7
       Data: 9|System.RuntimeType, mscorlib
     - Name: 
       Entry: 1
-      Data: Scripts.StateMachineSystem.InputEntityMoveState, Assembly-CSharp
+      Data: Sandbox.StateMachineSystem.InputEntityMoveState, Assembly-CSharp
     - Name: 
       Entry: 8
       Data: 
     - Name: _conditions
       Entry: 7
-      Data: 10|Scripts.StateMachineSystem.Condition[], Assembly-CSharp
+      Data: 10|Sandbox.StateMachineSystem.Condition[], Assembly-CSharp
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 11|Scripts.StateMachineSystem.InputAxisZeroCondition, Assembly-CSharp
+      Data: 11|Sandbox.StateMachineSystem.InputAxisZeroCondition, Assembly-CSharp
     - Name: _isNecessary
       Entry: 5
       Data: true
@@ -4559,25 +4568,25 @@ MonoBehaviour:
       Data: 9
     - Name: $v
       Entry: 7
-      Data: 12|Scripts.StateMachineSystem.Transition[], Assembly-CSharp
+      Data: 12|Sandbox.StateMachineSystem.Transition[], Assembly-CSharp
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 13|Scripts.StateMachineSystem.Transition, Assembly-CSharp
+      Data: 13|Sandbox.StateMachineSystem.Transition, Assembly-CSharp
     - Name: _toState
       Entry: 9
       Data: 4
     - Name: _conditions
       Entry: 7
-      Data: 14|Scripts.StateMachineSystem.Condition[], Assembly-CSharp
+      Data: 14|Sandbox.StateMachineSystem.Condition[], Assembly-CSharp
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 15|Scripts.StateMachineSystem.InputAxisZeroCondition, Assembly-CSharp
+      Data: 15|Sandbox.StateMachineSystem.InputAxisZeroCondition, Assembly-CSharp
     - Name: _isNecessary
       Entry: 5
       Data: true

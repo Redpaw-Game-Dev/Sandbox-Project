@@ -351,5 +351,13 @@ PrefabInstance:
       propertyPath: serializationData.Prefab
       value: 
       objectReference: {fileID: 8829841415582259427, guid: 8b01b5ff0ab5a5b42924555f4635c8c6, type: 3}
+    - target: {fileID: 8829841415582259427, guid: 8b01b5ff0ab5a5b42924555f4635c8c6, type: 3}
+      propertyPath: serializationData.PrefabModifications.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8829841415582259427, guid: 8b01b5ff0ab5a5b42924555f4635c8c6, type: 3}
+      propertyPath: serializationData.PrefabModificationsReferencedUnityObjects.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8b01b5ff0ab5a5b42924555f4635c8c6, type: 3}

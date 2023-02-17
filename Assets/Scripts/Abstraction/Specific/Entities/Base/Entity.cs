@@ -6,7 +6,7 @@ using Sirenix.Serialization;
 using Sirenix.Utilities;
 using Zenject;
 
-namespace Scripts.Abstraction
+namespace Sandbox.Abstraction
 {
     public abstract class Entity : SerializedMonoBehaviour, IEntity
     {

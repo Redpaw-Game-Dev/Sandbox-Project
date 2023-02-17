@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace Scripts.Abstraction
+namespace Sandbox.Abstraction
 {
     public abstract class FloatFeature : IFeature<float>
     {

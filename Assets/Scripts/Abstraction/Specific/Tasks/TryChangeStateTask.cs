@@ -1,7 +1,7 @@
-﻿using Scripts.StateMachineSystem;
+﻿using Sandbox.StateMachineSystem;
 using UnityEngine;
 
-namespace Scripts.Abstraction
+namespace Sandbox.Abstraction
 {
     public class TryChangeStateTask : Task
     {

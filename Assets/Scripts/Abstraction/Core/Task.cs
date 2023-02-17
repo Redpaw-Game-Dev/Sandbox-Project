@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Scripts.Abstraction
+namespace Sandbox.Abstraction
 {
     [Serializable]
     public abstract class Task

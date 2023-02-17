@@ -4,7 +4,7 @@ using Sirenix.OdinInspector;
 using Sirenix.Serialization;
 using UnityEngine;
 
-namespace Scripts.Abstraction
+namespace Sandbox.Abstraction
 {
     [CreateAssetMenu(menuName = "Game/Labels Config")]
     public partial class LabelsConfig : SerializedScriptableObject

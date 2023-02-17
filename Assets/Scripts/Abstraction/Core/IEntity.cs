@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Scripts.Abstraction
+namespace Sandbox.Abstraction
 {
     public interface IEntity
     {

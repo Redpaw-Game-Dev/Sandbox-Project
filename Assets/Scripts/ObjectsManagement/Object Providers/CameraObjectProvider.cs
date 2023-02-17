@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Scripts.ObjectsManagement
+namespace Sandbox.ObjectsManagement
 {
     public class CameraObjectProvider : ObjectProvider<Camera>
     {

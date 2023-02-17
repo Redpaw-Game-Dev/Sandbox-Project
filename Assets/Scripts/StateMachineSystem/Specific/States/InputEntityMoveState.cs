@@ -1,11 +1,11 @@
-﻿using Scripts.Abstraction;
-using Scripts.Input;
+﻿using Sandbox.Abstraction;
+using Sandbox.Input;
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
 using UnityEngine;
 using Zenject;
 
-namespace Scripts.StateMachineSystem
+namespace Sandbox.StateMachineSystem
 {
     public class InputEntityMoveState : State
     {

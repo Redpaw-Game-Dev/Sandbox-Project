@@ -3,7 +3,7 @@ using System.Collections;
 using System.Linq;
 using Sirenix.OdinInspector;
 
-namespace Scripts.Abstraction
+namespace Sandbox.Abstraction
 {
     public partial class LabelsConfig
     {

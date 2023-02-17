@@ -2,7 +2,7 @@
 using Sirenix.Serialization;
 using UnityEngine;
 
-namespace Scripts.Abstraction
+namespace Sandbox.Abstraction
 {
     public class EntityTransformMovementBehaviour : MovementBehaviour
     {

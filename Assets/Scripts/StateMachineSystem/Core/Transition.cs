@@ -4,7 +4,7 @@ using Sirenix.Utilities;
 using UnityEngine;
 using Zenject;
 
-namespace Scripts.StateMachineSystem
+namespace Sandbox.StateMachineSystem
 {
     [Serializable]
     public class Transition

@@ -1,4 +1,4 @@
-﻿namespace Scripts.Abstraction
+﻿namespace Sandbox.Abstraction
 {
     public class RotationSpeedFeature : FloatFeature
     {

@@ -1,8 +1,8 @@
-﻿using Scripts.Input;
+﻿using Sandbox.Input;
 using UnityEngine;
 using Zenject;
 
-namespace Scripts.Abstraction
+namespace Sandbox.Abstraction
 {
     public class PlayerInfoProcessor : InfoProcessor
     {

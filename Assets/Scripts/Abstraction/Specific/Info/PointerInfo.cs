@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Scripts.Abstraction
+namespace Sandbox.Abstraction
 {
     public struct PointerInfo : IInfo
     {

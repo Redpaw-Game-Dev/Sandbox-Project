@@ -1,7 +1,7 @@
 ﻿using System;
-using Scripts.Abstraction;
+using Sandbox.Abstraction;
 
-namespace Scripts.StateMachineSystem
+namespace Sandbox.StateMachineSystem
 {
     public interface IState
     {

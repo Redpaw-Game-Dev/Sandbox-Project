@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Scripts.StateMachineSystem
+namespace Sandbox.StateMachineSystem
 {
     public abstract class State : IState
     {

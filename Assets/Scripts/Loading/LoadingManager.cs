@@ -3,7 +3,7 @@ using UnityEngine.AddressableAssets;
 using UnityEngine.SceneManagement;
 using Zenject;
 
-namespace Scripts.Loading
+namespace Sandbox.Loading
 {
     public class LoadingManager : IInitializable
     {

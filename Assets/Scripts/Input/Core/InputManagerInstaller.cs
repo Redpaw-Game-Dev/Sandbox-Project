@@ -1,6 +1,6 @@
 ﻿using Zenject;
 
-namespace Scripts.Input
+namespace Sandbox.Input
 {
     public class InputManagerInstaller : MonoInstaller
     {

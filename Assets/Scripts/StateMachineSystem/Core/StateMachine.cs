@@ -7,7 +7,7 @@ using Sirenix.Utilities;
 using UnityEngine;
 using Zenject;
 
-namespace Scripts.StateMachineSystem
+namespace Sandbox.StateMachineSystem
 {
     public class StateMachine : SerializedMonoBehaviour
     {
