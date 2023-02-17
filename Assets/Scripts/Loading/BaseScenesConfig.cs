@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.AddressableAssets;
 
-namespace Scripts.Loading
+namespace Sandbox.Loading
 {
     [CreateAssetMenu(menuName = "Game/Base Scenes Config")]
     public class BaseScenesConfig : ScriptableObject

@@ -2,7 +2,7 @@
 using Zenject;
 using Object = UnityEngine.Object;
 
-namespace Scripts.ObjectsManagement
+namespace Sandbox.ObjectsManagement
 {
     public class ObjectProvider<T> : MonoBehaviour where T : Object
     {

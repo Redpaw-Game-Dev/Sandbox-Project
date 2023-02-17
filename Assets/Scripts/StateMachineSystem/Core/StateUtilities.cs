@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Scripts.StateMachineSystem
+namespace Sandbox.StateMachineSystem
 {
     public static class StateUtilities
     {

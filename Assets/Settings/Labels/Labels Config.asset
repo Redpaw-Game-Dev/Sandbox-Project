@@ -23,20 +23,20 @@ MonoBehaviour:
     SerializationNodes:
     - Name: _labels
       Entry: 7
-      Data: 0|System.Collections.Generic.List`1[[Scripts.Abstraction.ILabel, Assembly-CSharp]],
+      Data: 0|System.Collections.Generic.List`1[[Sandbox.Abstraction.ILabel, Assembly-CSharp]],
         mscorlib
     - Name: 
       Entry: 12
       Data: 2
     - Name: 
       Entry: 7
-      Data: 1|Scripts.Abstraction.AppearanceLabel, Assembly-CSharp
+      Data: 1|Sandbox.Abstraction.AppearanceLabel, Assembly-CSharp
     - Name: 
       Entry: 8
       Data: 
     - Name: 
       Entry: 7
-      Data: 2|Scripts.Abstraction.StatsLabel, Assembly-CSharp
+      Data: 2|Sandbox.Abstraction.StatsLabel, Assembly-CSharp
     - Name: 
       Entry: 8
       Data: 

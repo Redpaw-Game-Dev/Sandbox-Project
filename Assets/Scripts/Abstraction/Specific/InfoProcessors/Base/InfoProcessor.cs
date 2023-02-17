@@ -3,7 +3,7 @@ using Sirenix.OdinInspector;
 using Sirenix.Serialization;
 using Zenject;
 
-namespace Scripts.Abstraction
+namespace Sandbox.Abstraction
 {
     public abstract class InfoProcessor : SerializedMonoBehaviour
     {

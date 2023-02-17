@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using Zenject;
 
-namespace Scripts.Utilities
+namespace Sandbox.Utilities
 {
     public class CanvasWorldCameraInjector : MonoBehaviour
     {

@@ -1,4 +1,4 @@
-﻿namespace Scripts.StateMachineSystem
+﻿namespace Sandbox.StateMachineSystem
 {
     public class IdleState : State
     {

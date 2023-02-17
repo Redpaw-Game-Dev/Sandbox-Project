@@ -1,8 +1,8 @@
-﻿using Scripts.Input;
+﻿using Sandbox.Input;
 using UnityEngine;
 using Zenject;
 
-namespace Scripts.StateMachineSystem
+namespace Sandbox.StateMachineSystem
 {
     public class InputAxisZeroCondition : Condition
     {

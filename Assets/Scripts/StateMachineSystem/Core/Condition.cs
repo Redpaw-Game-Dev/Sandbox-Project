@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Scripts.StateMachineSystem
+namespace Sandbox.StateMachineSystem
 {
     public abstract class Condition
     {

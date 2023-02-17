@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using Zenject;
 
-namespace Scripts.Loading
+namespace Sandbox.Loading
 {
     public class LoadingManagerInstaller : MonoInstaller
     {

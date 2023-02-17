@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using Zenject;
 
-namespace Scripts.Abstraction
+namespace Sandbox.Abstraction
 {
     public class ProcessMovementBehaviourTask : Task
     {

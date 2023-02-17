@@ -2,7 +2,7 @@
 using Cysharp.Threading.Tasks;
 using UnityEngine;
 
-namespace Scripts.Abstraction
+namespace Sandbox.Abstraction
 {
     public class DisableAfterTimerTask : Task
     {

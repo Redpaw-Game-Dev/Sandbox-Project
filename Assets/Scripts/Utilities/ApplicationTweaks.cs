@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Scripts.Utilities
+namespace Sandbox.Utilities
 {
     public class ApplicationTweaks : MonoBehaviour
     {

@@ -1,12 +1,12 @@
 ﻿using System;
 using Cinemachine;
-using Scripts.ObjectsManagement;
+using Sandbox.ObjectsManagement;
 using Sirenix.OdinInspector;
 using UnityEngine;
 using Zenject;
 using Object = UnityEngine.Object;
 
-namespace Scripts.Abstraction
+namespace Sandbox.Abstraction
 {
     public class VCamCustomBehaviour : SerializedMonoBehaviour
     {
